@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: black;
+    color: white;
+   height: 100vh;
+   position: relative;
+}
+
+.main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 100vh;
+   
+}
+
+.container
+{
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    position: absolute;
+    height: 85%;
+    width: fit-content;
+   
+}
+
+.top{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding: 20px;
+}
+
+.top>input
+{
+   min-width: 650px;
+   height: 30px;
+   border-color:#8E8E8E;
+   background-color: black;
+   color: white;
+   outline: none;
+   font-size: 18px;
+   box-shadow: 1px 2px 5px green;
+   padding: 5px 15px;
+}
+
+.top>div{
+    min-width: 100px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top>div:hover{
+    background-color: green;
+
+}
+
+.bottom{
+  
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 200px 100px 100px 100px 100px 200px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    align-items: center;
+
+    gap: 50px;
+}
+.item div:first-child{
+    display: flex; align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.item img{
+    height: 20px;
+    width: 20px;
+}
+
+.dec{
+    color: red;
+}
+
+.inc
+{
+    color: green;
+}
+
+.sort:active{
+    background-color: orange !important;
+    color: black;
+}
